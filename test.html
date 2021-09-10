@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+	<title> Тестирование</title>
+
+	<style>
+	
+		.column {
+		float: left;
+		width: 30%;
+		padding: 10px; /* Поля вокруг текста */
+		}
+
+		.row
+		{
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		
+		}
+		/* Clear floats after the columns */
+		.row:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+		
+		.center {
+		  display: block;
+		  margin-left: auto;
+		  margin-right: auto;
+		 
+		}
+		
+		.button
+		{
+			border: 0;
+			border-radius: 10px;
+			background: #6477EB;
+			color: #fff;
+			padding: 10px 25px;
+			width: 10%;
+			font-size: 15pt;
+			display: block;
+			margin: 2px auto;
+			cursor: pointer;
+		}
+		.button:active
+		{
+			background: #2b3ca3;
+			color: #ccc;
+	
+		}
+		
+		.input_field
+		{
+
+		}
+		
+		.questionBlock
+		{
+			border: 0;
+			box-shadow: 0 0 10px rgba(0,0,0,0.5);
+			padding: 20px;
+		}
+		
+		#result
+		{
+			border: 0;
+			box-shadow: 0 0 10px rgba(0,0,0,0.5);
+			
+			width: 40%;
+			padding: 20px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		
+		
+		
+		.button_wrong 
+		{
+			background: #f29c9c;
+		}
+
+		.button_correct
+		{
+			background: #7bd79a;
+		}
+		
+		.verse {
+  display: table;
+  margin: 0 auto; /* для центрирования display: table; не нужно указывать ширину блока, она рассчитывается самостоятельно */ 
+  white-space: pre-line; /* не нужен <br> */ 
+  word-wrap: break-word; /* чтобы слова переносились на маленьком экране */ 
+}
+	</style>
+
+	<script>
+	
+	
+	</script>
+	</head>
+	<body>
+  
+  
+	
+	<div class="row">
+		<div class="column"> 
+
+			<font size="+2"><p align="center"> <b> Пространственное мышление  </b>	</font></p>
+			
+			<div class = "questionBlock" id="qB_1">
+				<font size="+1"> <b> Вопрос 1. Какую фигуру можно сложить, если имеются три простые фигуры? </b></font>
+				<img src="img/Q-1.jpg" class="center">
+				<br>
+				
+				<input type = "radio" name=q1  value="1">1 <img src="img/Q-1-A-1.jpg">
+				<input type = "radio" name=q1 value="0">2 <img src="img/Q-1-A-2.jpg">
+				<input type = "radio" name=q1 value="0">3 <img src="img/Q-1-A-3.jpg">
+				
+			</div>
+			<br>
+			
+			<div class = "questionBlock" id="qB_2">
+				<font size="+1"> <b> Вопрос 2. Какую фигуру ты увидишь, если посмотришь сверху? </b></font>
+				<img src="img/Q-2.JPG" width=100px >
+				<br>
+				
+				<input type = "radio" name=q2  value="0">1  <img src="img/Q-2-A-1.JPG">
+				<input type = "radio" name=q2 value="1">2 <img src="img/Q-2-A-2.JPG">
+				
+			</div>
+			<br>
+			
+			<div class = "questionBlock" id="qB_3">
+				<font size="+1"> <b> Вопрос 3. Какой из четырех возможных вариантов представляет собой куб в сложенном виде? </b></font>
+				<img src="img/Q-3.jpg" class="center" width=40%>
+				<br> 
+				
+				
+				<input type = "radio" name=q3  value="0">1 <img src="img/Q-3-A-1.jpg" width=75px>
+				<input type = "radio" name=q3 value="0">2 <img src="img/Q-3-A-2.jpg" width=75px>
+				<input type = "radio" name=q3 value="1">3 <img src="img/Q-3-A-3.jpg" width=75px>
+				<input type = "radio" name=q3 value="0">4 <img src="img/Q-3-A-4.jpg"width=75px >
+				
+			</div>
+			<br>
+			
+			<div class = "questionBlock" id="qB_4">
+				<font size="+1"> <b>Вопрос 4. Фигура собрана из трех деталей, каждая из которых состоит из четырех кубов и окрашена в свой цвет. Как выглядит белая деталь? </b></font>
+				<img src="img/4.jpg" class="center">
+				<br> 
+				
+				
+				<input type = "radio" name=q4  value="0">1  <img src="img/4-1.jpg" width=75px>
+				<input type = "radio" name=q4 value="0">2 <img src="img/4-2.jpg" width=75px>
+				<input type = "radio" name=q4 value="1">3 <img src="img/4-3.jpg" width=75px>
+				<input type = "radio" name=q4 value="0">4 <img src="img/4-4.jpg"width=75px >
+				
+			</div>
+			<br>
+			
+			<div class = "questionBlock" id="qB_5">
+				<font size="+1"> <b>Вопрос 5. Из листа клетчатой бумаги вырезали кусок. Какой кусок соответствуетвырезу? </b></font>
+				<img src="img/5.jpg" class="center">
+				<br> 
+				
+				
+				<input type = "radio" name=q5  value="1">1  <img src="img/5-1.jpg" width=75px>
+				<input type = "radio" name=q5 value="0">2 <img src="img/5-2.jpg" width=85px>
+				<input type = "radio" name=q5 value="0">3 	<img src="img/5-3.jpg" width=75px>
+
+				
+			</div>
+			<br>
+			
+			
+			<div class = "questionBlock" id="qB_6">
+				<font size="+1"> <b> Вопрос 6. Сколько кубиков в композиции? </b></font>
+
+				<p> <img src="img/Q-6.jpg" width=150px >
+				<p> <input type="number" id=q6 class="input_field">
+			</div>
+			<br>
+				
+		</div>
+		
+		<div class="column"> 
+
+			<font size="+2"><p align="center" > <b>	Логика и математика </b> </font></p>
+			
+			<div class = "questionBlock" id="qB_7">
+				<font size="+1" > <b> Вопрос 7. У Кати, Маши и Ани есть кошка, собака и попугай. У Кати не живёт попугай, а у Маши не живет ни попугай, ни кошка. Кто живет у Ани? </b></font>
+				<br>
+				<p> <input type = "radio" name=q7 value="0" >1. Кошка 
+				<p> <input type = "radio" name=q7 value="0" >2. Собака 
+				<p> <input type = "radio" name=q7  value="1" >3. Попугай
+			</div>
+			<br>
+			
+			
+			<div class = "questionBlock" id="qB_8">
+				<font size="+1" > <b> Вопрос 8. Продолжи фразу: “Если яблоко больше мандарина, а груша больше яблока, то …”</b></font>
+				<br>
+				<p> <input type = "radio" name=q8 value="0" >1. Мандарин больше груши
+				<p> <input type = "radio" name=q8 value="1" >2. Груша больше мандарина 
+				<p> <input type = "radio" name=q8  value="0" >3. Груша с мандарином одинакового размера 
+			</div>
+			<br>
+				
+			<div class = "questionBlock" id="qB_9">
+			<font size="+1"> <b> Вопрос 9. Какому числу равен динозавр?  </b></font>
+
+				<p> <img src="img/9.jpg" width=150px >
+				<p> <input type="number" id=q9 class="input_field">
+			</div>
+			<br>
+			
+			<div class = "questionBlock" id="qB_10">
+			<font size="+1"> <b> Вопрос 10. Одна старая леди очень любила собак и кошек. Всего у нее было десять питомцев. Однажды она решила накормить их всех конфетами, и раздала им 56 штук. При этом мы знаем, что каждой кошке она давала по пять конфет, а каждой собаке - по шесть. Сколько у нее было собак и сколько кошек?  </b></font>
+
+				<p>Собак: <input type="number" id=q10_1 class="input_field">
+				<p>Кошек: <input type="number" id=q10_2 class="input_field">
+			</div>
+			<br>
+			
+			<div class = "questionBlock" id="qB_11">
+			<font size="+1"> <b> Вопрос 11. 
+											<div class="verse"> Шел Кондрат  </div>
+											<div class="verse"> В Ленинград, </div>
+											 <div class="verse">А навстречу — двенадцать ребят.  </div>
+											 <div class="verse">У каждого по три лукошка, </div>
+											 <div class="verse">В каждом лукошке — кошка, </div>
+											 <div class="verse">У каждой кошки — двенадцать котят. </div>
+											 <div class="verse">У каждого котенка </div>
+											 <div class="verse">В зубах по четыре мышонка. </div>
+											<div class="verse"> И задумался Кондрат: </div>
+											 <div class="verse">"Сколько мышат и котят </div>
+											 <div class="verse">Ребята несут в Ленинград?" </div>
+											</font>
+											
+			</b>
+				<p>Ответ: <input type="number" id=q11 class="input_field">
+			</div>
+			<br>
+			
+			<div class = "questionBlock" id="qB_12">
+			<font size="+1"> <b> Вопрос 12. С борта парохода был спущен стальной трап. Нижние 4 ступеньки трапа погружены в воду. Каждая ступенька имеет толщину в 5 см; расстояние между двумя соседними ступеньками составляет 30 см. Начался прилив, при котором уровень воды стал подниматься со скоростью 40 см. в час. Сколько ступенек окажутся под водой через 2 часа? </b> </font>
+
+			 <p>Ответ: <input type="number" id=q12 class="input_field">
+			</div>
+			<br>
+			
+			
+			<div class = "questionBlock" id="qB_13">
+			<font size="+1"> <b> Вопрос 13. Лена живет на четвертом этаже, при этом, поднимаясь к себе домой, она проходит по лестнице 60 ступенек. Юля живет в этом же подъезде на втором этаже. Сколько ступенек проходит Юля, поднимаясь к себе домой на второй этаж. </b> </font>
+
+				</b> <p>Ответ: <input type="number" id=q13 class="input_field">
+			</div>
+			<br>
+			
+			<div class = "questionBlock" id="qB_14">
+			<font size="+1"> <b> Вопрос 14. Когда моему отцу был 31 год, мне было 8 лет, а теперь отец старше меня вдвое. Сколько мне лет теперь? </b> </font>
+
+				<p>Ответ: <input type="number" id=q14 class="input_field">
+			</div>
+			<br>
+			
+			<div class = "questionBlock" id="qB_15">
+			<font size="+1"> <b> Вопрос 15. Чему равен x в уравнении? </b> </font>
+
+				<font size="+2" align="center" > <p> <b> x = 1 + 0.5 * x </b> </font>
+				<p>Ответ: <input type="number" id=q15 class="input_field">
+			</div>
+			<br>
+			
+		</div>
+		
+		<div class="column"> 
+
+			<font size="+2"><p align="center"> <b> 	Владение ПК  </b> </font></p>
+			
+			<div class = "questionBlock" id="qB_16">
+				<font size="+1" > <b> Вопрос 16. Чтобы завершить “зависшую” программу, нужно запустить: </b></font>
+				<br>
+				<p> <input type = "radio" name=q16 value="0" >1. Контроллер домена приложений
+				<p> <input type = "radio" name=q16  value="1" >2. Диспетчер задач
+				<p> <input type = "radio" name=q16  value="0" >3. Менеджер потоков
+				<p> <input type = "radio" name=q16 value="0" >4. Панель администрирования
+			</div>
+			<br>
+			
+			<div class = "questionBlock" id="qB_17">
+			<font size="+1"> <b> Вопрос 17. Сколько проводов нужно подключить к процессору, чтобы он заработал?  </b> </font>
+
+				<p>Ответ: <input type="number" id=q17 class="input_field">
+			</div>
+			<br>
+			<div class = "questionBlock" id="qB_18">
+			<font size="+1"> <b> Вопрос 18. Какую клавишу нужно удерживать, чтобы напечатать большую букву?  </b> </font>
+
+				<p>Ответ: <input type="text" id=q18 class="input_field">
+			</div>
+			<br>
+			<div class = "questionBlock" id="qB_19">
+			<font size="+1"> <b> Вопрос 19. Какую клавишу нужно нажать чтобы скопировать выделенный текст?  </b> </font>
+
+				<p>Ответ: Ctrl + <input type="text" id=q19 class="input_field">
+			</div>
+			
+			<font size="+1"> <p> <b> Для выполнения следующих заданий тебе потребуется компьютер.  Если ты можешь сделать только часть задания (например, не умеешь сохранять файлы), сделай то, что умеешь Это нормально, ведь ты пришел учиться!  После того, как сделаешь всю практику, позови учителя, он проверит и поставит тебе оценку. </b> </font>
+			
+			<font size="+1"> <p>  ВАЖНО! Не закрывай эту страницу, иначе все твои ответы не сохранятся. </p> </b>
+			
+			<div class = "questionBlock" id="qB_20">
+			<font size="+1"> <b> Практика 1. Создай папку на рабочем столе и назови ее “Я хочу учиться в Юниум”. В ней создай текстовый документ с именем “Учиться это интересно”. Набери туда текст ниже и сохрани файла.</b> </font>
+
+			<img src="img/text_for_typing.jpg" class="center">
+				<p>Оценка: <input type="text" id=q20 class="input_field"> (Ставит преподаватель, 0 - 5 баллов)
+			</div>
+			<br>
+			
+			<div class = "questionBlock" id="qB_21">
+			<font size="+1"> <b> Практика 2. Из получившейся папки в практике 1 создай архив с любым именем и помести архив на рабочий стол рядом с папкой. </b> </font>
+
+				<p>Оценка: <input type="text" id=q21 class="input_field"> (Ставит преподаватель, 0 - 5 баллов)
+			</div>
+			<br>
+			
+			<div class = "questionBlock" id="qB_22">
+			<font size="+1"> <b> Практика 3. С помощью браузера и интернета найти в каком году выпустили игру тетрис. Ответ запиши ниже. </b> </font>
+
+				<p>Ответ: <input type="text" id=q22 class="input_field"> 
+			</div>
+			<br>
+			
+			<div class = "questionBlock" id="qB_23">
+			<font size="+1"> <b> Практика 4. Постарайся нарисовать максимально похожий рисунок в программе Paint. Затем сохрани изображение в папке “Я хочу учиться в Юниум”, которую ты сделал на практике 1. Файл должен называться “Among Us Character”.</b> </font>
+
+			<img src="img/23.jpg" class="center">
+				<p>Оценка: <input type="text" id=q23 class="input_field"> (Ставит преподаватель, 0 - 5 баллов)
+			</div>
+			<br>
+			
+				
+		</div>
+	</div>
+
+	<input class="button" type="button" value="Проверить"  onclick="Check()"> 
+	
+	</br>
+	<div class="row" >
+
+		<div id="result" hidden="true" > 
+		
+			<font size="+2"><p align="center"> <b>	Твои результаты </b>  </font></p>
+			<p> <font size="+2" id="space" >    </font>
+			<p> <font size="+2" id="math" >   </font>
+			<p> <font size="+2" id="PC" >  </font>
+			
+		</div>
+	</div>
+	
+	
+	
+
+
+
+	
+	<script type = "text/javascript">
+
+
+            function Check() {
+			
+			// Get input
+			var q1 = document.querySelector('input[name="q1"]:checked');
+			var q2 = document.querySelector('input[name="q2"]:checked');
+			var q3 = document.querySelector('input[name="q3"]:checked');
+			var q4 = document.querySelector('input[name="q4"]:checked');
+			var q5 = document.querySelector('input[name="q5"]:checked');
+			var q6 = document.getElementById("q6");
+					
+			var q7 = document.querySelector('input[name="q7"]:checked');
+			var q8 = document.querySelector('input[name="q8"]:checked');
+			var q9 = document.getElementById("q9");
+			var q10_1 = document.getElementById("q10_1");
+			var q10_2 = document.getElementById("q10_2");
+			var q11 = document.getElementById("q11");
+			var q12 = document.getElementById("q12");
+			var q13 = document.getElementById("q13");
+			var q14 = document.getElementById("q14");
+			var q15 = document.getElementById("q15");
+
+			
+			
+			var q16 = document.querySelector('input[name="q16"]:checked');
+			var q17 = document.getElementById("q17");
+			var q18 = document.getElementById("q18");
+			var q19 = document.getElementById("q19");
+			
+			var q20 = document.getElementById("q20");
+			var q21 = document.getElementById("q21");
+			var q22 = document.getElementById("q22");
+			var q23 = document.getElementById("q23");
+	
+
+			// Check input
+			if(q1 == null  || q2 == null   || q3 == null  || q4 == null  || q5 == null || q6.value == "" || q7 == null || q8 == null || q9.value == "" || q10_1.value == "" || q10_2.value == "" ||  q11.value == "" ||  q12.value == "" ||  q13.value == "" ||  q14.value == "" ||  q15.value == "" || q16 == null  || q17.value == "" || q18.value == "" || q19.value == "" || q22.value == "") {alert("Ты ответил не на все вопросы!"); return false;};
+	
+			
+			// Calc result 
+			var space_score = 0;
+			var math_score = 0;
+			var pc_score = 0;
+			
+			if(q1.value == 1) space_score += 1; 
+			if(q2.value == 1) space_score += 1; 
+			if(q3.value == 1) space_score += 1; 
+			if(q4.value == 1) space_score += 1; 
+			if(q5.value == 1) space_score += 1; 
+			if(q6.value == 26) space_score += 1;
+			
+			if(q7.value == 1) math_score += 1;
+			if(q8.value == 1) math_score += 1;
+			if(q9.value == 6) math_score += 1;
+			if(q10_1.value == 6 && q10_2.value == 4) math_score += 1;
+			if(q11.value == 0) math_score += 1;
+			if(q12.value == 4) math_score += 1;
+			if(q13.value == 20) math_score += 1;
+			if(q14.value == 23) math_score += 1;
+			if(q15.value == 2) math_score += 1;
+			
+			
+			
+			if(q16.value == 1) pc_score += 1;
+			if(q17.value == 0) pc_score += 1;
+			if(q18.value == "Shift" || q18.value == "shift" || q18.value == "SHIFT" || q18.value == "Шифт"  || q18.value == "шифт") pc_score += 1;
+			if(q19.value == "C" || q19.value == "c" || q19.value == "С" || q19.value == "с" ) pc_score += 1;
+			if(q22.value == 1984) pc_score += 1;
+			
+			// Show answer
+			if(q1.value == 1) document.getElementById('qB_1').classList.add('button_correct'); else document.getElementById('qB_1').classList.add('button_wrong');
+			if(q2.value == 1) document.getElementById('qB_2').classList.add('button_correct'); else document.getElementById('qB_2').classList.add('button_wrong');
+			if(q3.value == 1) document.getElementById('qB_3').classList.add('button_correct'); else document.getElementById('qB_3').classList.add('button_wrong');
+			if(q4.value == 1) document.getElementById('qB_4').classList.add('button_correct'); else document.getElementById('qB_4').classList.add('button_wrong');
+			if(q5.value == 1) document.getElementById('qB_5').classList.add('button_correct'); else document.getElementById('qB_5').classList.add('button_wrong');
+			if(q6.value == 26)  document.getElementById('qB_6').classList.add('button_correct'); else document.getElementById('qB_6').classList.add('button_wrong');
+			
+			if(q7.value == 1)  document.getElementById('qB_7').classList.add('button_correct'); else document.getElementById('qB_7').classList.add('button_wrong');
+			if(q8.value == 1)  document.getElementById('qB_8').classList.add('button_correct'); else document.getElementById('qB_8').classList.add('button_wrong');
+			if(q9.value == 6)  document.getElementById('qB_9').classList.add('button_correct'); else document.getElementById('qB_9').classList.add('button_wrong');
+			if(q10_1.value == 6 && q10_2.value == 4)  document.getElementById('qB_10').classList.add('button_correct'); else document.getElementById('qB_10').classList.add('button_wrong');
+			if(q11.value == 0)  document.getElementById('qB_11').classList.add('button_correct'); else document.getElementById('qB_11').classList.add('button_wrong');
+			if(q12.value == 4)  document.getElementById('qB_12').classList.add('button_correct'); else document.getElementById('qB_12').classList.add('button_wrong');
+			if(q13.value == 20)  document.getElementById('qB_13').classList.add('button_correct'); else document.getElementById('qB_13').classList.add('button_wrong');
+			if(q14.value == 23)  document.getElementById('qB_14').classList.add('button_correct'); else document.getElementById('qB_14').classList.add('button_wrong');
+			if(q15.value == 2)  document.getElementById('qB_15').classList.add('button_correct'); else document.getElementById('qB_15').classList.add('button_wrong');
+			
+			if(q16.value == 1)  document.getElementById('qB_16').classList.add('button_correct'); else document.getElementById('qB_16').classList.add('button_wrong');
+			if(q17.value == 0)  document.getElementById('qB_17').classList.add('button_correct'); else document.getElementById('qB_17').classList.add('button_wrong');
+			if(q18.value == "Shift" || q18.value == "shift" || q18.value == "SHIFT" || q18.value == "Шифт" || q18.value == "шифт")  document.getElementById('qB_18').classList.add('button_correct'); else document.getElementById('qB_18').classList.add('button_wrong');
+			if(q19.value == "C" || q19.value == "c" || q19.value == "С" || q19.value == "с" ) document.getElementById('qB_19').classList.add('button_correct'); else document.getElementById('qB_19').classList.add('button_wrong');
+			if(q22.value == 1984) document.getElementById('qB_22').classList.add('button_correct'); else document.getElementById('qB_22').classList.add('button_wrong');
+			
+			if(q20.value > 0) document.getElementById('qB_20').classList.add('button_correct'); else document.getElementById('qB_20').classList.remove('button_correct');
+			if(q21.value > 0) document.getElementById('qB_21').classList.add('button_correct'); else document.getElementById('qB_21').classList.remove('button_correct');
+			if(q23.value > 0) document.getElementById('qB_23').classList.add('button_correct'); else document.getElementById('qB_23').classList.remove('button_correct');
+			
+			if(q20.value == 0) document.getElementById('qB_20').classList.add('button_wrong'); 
+			if(q21.value == 0) document.getElementById('qB_21').classList.add('button_wrong'); 
+			if(q23.value == 0) document.getElementById('qB_23').classList.add('button_wrong'); 
+			
+			//disabled answer
+			var radios;
+			radios = document.getElementsByName('q1'); for (var i = 0, r=radios, l=r.length; i < l;  i++){r[i].disabled = true;}
+			radios = document.getElementsByName('q2'); for (var i = 0, r=radios, l=r.length; i < l;  i++){r[i].disabled = true;}
+			radios = document.getElementsByName('q3'); for (var i = 0, r=radios, l=r.length; i < l;  i++){r[i].disabled = true;}
+			radios = document.getElementsByName('q4'); for (var i = 0, r=radios, l=r.length; i < l;  i++){r[i].disabled = true;}
+			radios = document.getElementsByName('q5'); for (var i = 0, r=radios, l=r.length; i < l;  i++){r[i].disabled = true;}
+			
+			radios = document.getElementsByName('q7'); for (var i = 0, r=radios, l=r.length; i < l;  i++){r[i].disabled = true;}
+			radios = document.getElementsByName('q8'); for (var i = 0, r=radios, l=r.length; i < l;  i++){r[i].disabled = true;}
+			
+			
+			radios = document.getElementsByName('q16'); for (var i = 0, r=radios, l=r.length; i < l;  i++){r[i].disabled = true;}
+			
+		
+			q6.disabled = true;
+			q9.disabled = true;
+			q10_1.disabled = true;
+			q10_2.disabled = true;
+			q11.disabled = true;
+			q12.disabled = true;
+			q13.disabled = true;
+			q14.disabled = true;
+			q16.disabled = true;
+			q17.disabled = true;
+			q18.disabled = true;
+			q19.disabled = true;
+			q22.disabled = true;
+						
+			
+			//calc percent
+			space_score = Math.round(space_score / 6 * 100);
+			
+			math_score = Math.round(math_score / 9 * 100);
+			
+			pc_score += Number(q20.value) + Number(q21.value) + Number(q23.value);
+			
+			pc_score = Math.round(pc_score / 20 * 100);
+			
+			
+			//Show result
+			var result_panel = document.getElementById("result");
+			result_panel.hidden = false;
+			
+			var space_result_field = document.getElementById("space");
+			space_result_field.innerHTML = "Пространственное мышление - " + space_score + "%";
+			
+			var math_result_field = document.getElementById("math");
+			math_result_field.innerHTML = "Логика и математика - " + math_score + "%";
+			
+			var pc_score_field = document.getElementById("PC");
+			pc_score_field.innerHTML = "Владение ПК - " + pc_score + "%";
+			 
+            }
+            
+        </script>
+			
+</body>
+</html>
