@@ -415,60 +415,58 @@
 			var math_score = 0;
 			var pc_score = 0;
 			
-			if(q1.value == 1) space_score += 1; 
-			if(q2.value == 1) space_score += 1; 
-			if(q3.value == 1) space_score += 1; 
-			if(q4.value == 1) space_score += 1; 
-			if(q5.value == 1) space_score += 1; 
-			if(q6.value == 26) space_score += 1;
+			if(q1 != null && q1.value == 1) space_score += 1; 
+			if(q2 != null && q2.value == 1) space_score += 1; 
+			if(q3 != null && q3.value == 1) space_score += 1; 
+			if(q4 != null && q4.value == 1) space_score += 1; 
+			if(q5 != null && q5.value == 1) space_score += 1; 
+			if(q6 != null && q6.value == 26) space_score += 1;
 			
-			if(q7.value == 1) math_score += 1;
-			if(q8.value == 1) math_score += 1;
-			if(q9.value == 6) math_score += 1;
-			if(q10_1.value == 6 && q10_2.value == 4) math_score += 1;
-			if(q11.value == 0) math_score += 1;
-			if(q12.value == 4) math_score += 1;
-			if(q13.value == 20) math_score += 1;
-			if(q14.value == 23) math_score += 1;
-			if(q15.value == 2) math_score += 1;
+			if(q7 != null && q7.value == 1) math_score += 1;
+			if(q8 != null && q8.value == 1) math_score += 1;
+			if(q9 != null && q9.value == 6) math_score += 1;
+			if(q10_1 != null && q10_2 != null && q10_1.value == 6 && q10_2.value == 4) math_score += 1;
+			if(q11.value != "" && q11.value == 0) math_score += 1;
+			if(q12 != null && q12.value == 4) math_score += 1;
+			if(q13 != null && q13.value == 20) math_score += 1;
+			if(q14 != null && q14.value == 23) math_score += 1;
+			if(q15 != null && q15.value == 2) math_score += 1;
 			
-			
-			
-			if(q16.value == 1) pc_score += 1;
-			if(q17.value == 0) pc_score += 1;
-			if(q18.value == "Shift" || q18.value == "shift" || q18.value == "SHIFT" || q18.value == "Шифт"  || q18.value == "шифт") pc_score += 1;
-			if(q19.value == "C" || q19.value == "c" || q19.value == "С" || q19.value == "с" ) pc_score += 1;
-			if(q22.value == 1984) pc_score += 1;
+			if(q16 != null && q16.value == 1) pc_score += 1;
+			if(q17.value != "" && q17.value == 0) pc_score += 1;
+			if(q18 != null && q18.value == "Shift" || q18.value == "shift" || q18.value == "SHIFT" || q18.value == "Шифт"  || q18.value == "шифт") pc_score += 1;
+			if(q19 != null && q19.value == "C" || q19.value == "c" || q19.value == "С" || q19.value == "с" ) pc_score += 1;
+			if(q22 != null && q22.value == 1984) pc_score += 1;
 			
 			// Show answer
-			if(q1.value == 1) document.getElementById('qB_1').classList.add('button_correct'); else document.getElementById('qB_1').classList.add('button_wrong');
-			if(q2.value == 1) document.getElementById('qB_2').classList.add('button_correct'); else document.getElementById('qB_2').classList.add('button_wrong');
-			if(q3.value == 1) document.getElementById('qB_3').classList.add('button_correct'); else document.getElementById('qB_3').classList.add('button_wrong');
-			if(q4.value == 1) document.getElementById('qB_4').classList.add('button_correct'); else document.getElementById('qB_4').classList.add('button_wrong');
-			if(q5.value == 1) document.getElementById('qB_5').classList.add('button_correct'); else document.getElementById('qB_5').classList.add('button_wrong');
-			if(q6.value == 26)  document.getElementById('qB_6').classList.add('button_correct'); else document.getElementById('qB_6').classList.add('button_wrong');
+			if(q1 != null && q1.value == 1) document.getElementById('qB_1').classList.add('button_correct'); else document.getElementById('qB_1').classList.add('button_wrong');
+			if(q2 != null && q2.value == 1) document.getElementById('qB_2').classList.add('button_correct'); else document.getElementById('qB_2').classList.add('button_wrong');
+			if(q3 != null && q3.value == 1) document.getElementById('qB_3').classList.add('button_correct'); else document.getElementById('qB_3').classList.add('button_wrong');
+			if(q4 != null && q4.value == 1) document.getElementById('qB_4').classList.add('button_correct'); else document.getElementById('qB_4').classList.add('button_wrong');
+			if(q5 != null && q5.value == 1) document.getElementById('qB_5').classList.add('button_correct'); else document.getElementById('qB_5').classList.add('button_wrong');
+			if(q6 != null && q6.value == 26)  document.getElementById('qB_6').classList.add('button_correct'); else document.getElementById('qB_6').classList.add('button_wrong');
 			
-			if(q7.value == 1)  document.getElementById('qB_7').classList.add('button_correct'); else document.getElementById('qB_7').classList.add('button_wrong');
-			if(q8.value == 1)  document.getElementById('qB_8').classList.add('button_correct'); else document.getElementById('qB_8').classList.add('button_wrong');
-			if(q9.value == 6)  document.getElementById('qB_9').classList.add('button_correct'); else document.getElementById('qB_9').classList.add('button_wrong');
-			if(q10_1.value == 6 && q10_2.value == 4)  document.getElementById('qB_10').classList.add('button_correct'); else document.getElementById('qB_10').classList.add('button_wrong');
-			if(q11.value == 0)  document.getElementById('qB_11').classList.add('button_correct'); else document.getElementById('qB_11').classList.add('button_wrong');
-			if(q12.value == 4)  document.getElementById('qB_12').classList.add('button_correct'); else document.getElementById('qB_12').classList.add('button_wrong');
-			if(q13.value == 20)  document.getElementById('qB_13').classList.add('button_correct'); else document.getElementById('qB_13').classList.add('button_wrong');
-			if(q14.value == 23)  document.getElementById('qB_14').classList.add('button_correct'); else document.getElementById('qB_14').classList.add('button_wrong');
-			if(q15.value == 2)  document.getElementById('qB_15').classList.add('button_correct'); else document.getElementById('qB_15').classList.add('button_wrong');
+			if(q7 != null && q7.value == 1)  document.getElementById('qB_7').classList.add('button_correct'); else document.getElementById('qB_7').classList.add('button_wrong');
+			if(q8 != null && q8.value == 1)  document.getElementById('qB_8').classList.add('button_correct'); else document.getElementById('qB_8').classList.add('button_wrong');
+			if(q9 != null && q9.value == 6)  document.getElementById('qB_9').classList.add('button_correct'); else document.getElementById('qB_9').classList.add('button_wrong');
+			if(q10_1 != null && q10_2 != null && q10_1.value == 6 && q10_2.value == 4)  document.getElementById('qB_10').classList.add('button_correct'); else document.getElementById('qB_10').classList.add('button_wrong');
+			if(q11.value != "" && q11.value == 0)  document.getElementById('qB_11').classList.add('button_correct'); else document.getElementById('qB_11').classList.add('button_wrong');
+			if(q12 != null && q12.value == 4)  document.getElementById('qB_12').classList.add('button_correct'); else document.getElementById('qB_12').classList.add('button_wrong');
+			if(q13 != null && q13.value == 20)  document.getElementById('qB_13').classList.add('button_correct'); else document.getElementById('qB_13').classList.add('button_wrong');
+			if(q14 != null && q14.value == 23)  document.getElementById('qB_14').classList.add('button_correct'); else document.getElementById('qB_14').classList.add('button_wrong');
+			if(q15 != null && q15.value == 2)  document.getElementById('qB_15').classList.add('button_correct'); else document.getElementById('qB_15').classList.add('button_wrong');
 			
-			if(q16.value == 1)  document.getElementById('qB_16').classList.add('button_correct'); else document.getElementById('qB_16').classList.add('button_wrong');
-			if(q17.value == 0)  document.getElementById('qB_17').classList.add('button_correct'); else document.getElementById('qB_17').classList.add('button_wrong');
-			if(q18.value == "Shift" || q18.value == "shift" || q18.value == "SHIFT" || q18.value == "Шифт" || q18.value == "шифт")  document.getElementById('qB_18').classList.add('button_correct'); else document.getElementById('qB_18').classList.add('button_wrong');
-			if(q19.value == "C" || q19.value == "c" || q19.value == "С" || q19.value == "с" ) document.getElementById('qB_19').classList.add('button_correct'); else document.getElementById('qB_19').classList.add('button_wrong');
-			if(q22.value == 1984) document.getElementById('qB_22').classList.add('button_correct'); else document.getElementById('qB_22').classList.add('button_wrong');
+			if(q16 != null && q16.value == 1)  document.getElementById('qB_16').classList.add('button_correct'); else document.getElementById('qB_16').classList.add('button_wrong');
+			if(q17.value != "" && q17.value == 0)  document.getElementById('qB_17').classList.add('button_correct'); else document.getElementById('qB_17').classList.add('button_wrong');
+			if(q18 != null && q18.value == "Shift" || q18.value == "shift" || q18.value == "SHIFT" || q18.value == "Шифт" || q18.value == "шифт")  document.getElementById('qB_18').classList.add('button_correct'); else document.getElementById('qB_18').classList.add('button_wrong');
+			if(q19 != null && q19.value == "C" || q19.value == "c" || q19.value == "С" || q19.value == "с" ) document.getElementById('qB_19').classList.add('button_correct'); else document.getElementById('qB_19').classList.add('button_wrong');
+			if(q22 != null && q22.value == 1984) document.getElementById('qB_22').classList.add('button_correct'); else document.getElementById('qB_22').classList.add('button_wrong');
 			
-			if(q20.value > 0) document.getElementById('qB_20').classList.add('button_correct'); else document.getElementById('qB_20').classList.remove('button_correct');
+			if(q20 != null && q20.value > 0) document.getElementById('qB_20').classList.add('button_correct'); else document.getElementById('qB_20').classList.remove('button_correct');
 			// if(q21.value > 0) document.getElementById('qB_21').classList.add('button_correct'); else document.getElementById('qB_21').classList.remove('button_correct');
 			// if(q23.value > 0) document.getElementById('qB_23').classList.add('button_correct'); else document.getElementById('qB_23').classList.remove('button_correct');
 			
-			if(q20.value == 0) document.getElementById('qB_20').classList.add('button_wrong'); 
+			if(q20.value != "0" && q20.value == 0) document.getElementById('qB_20').classList.add('button_wrong'); 
 			// if(q21.value == 0) document.getElementById('qB_21').classList.add('button_wrong'); 
 			// if(q23.value == 0) document.getElementById('qB_23').classList.add('button_wrong'); 
 			
@@ -483,10 +481,8 @@
 			radios = document.getElementsByName('q7'); for (var i = 0, r=radios, l=r.length; i < l;  i++){r[i].disabled = true;}
 			radios = document.getElementsByName('q8'); for (var i = 0, r=radios, l=r.length; i < l;  i++){r[i].disabled = true;}
 			
-			
 			radios = document.getElementsByName('q16'); for (var i = 0, r=radios, l=r.length; i < l;  i++){r[i].disabled = true;}
 			
-		
 			q6.disabled = true;
 			q9.disabled = true;
 			q10_1.disabled = true;
@@ -495,7 +491,7 @@
 			q12.disabled = true;
 			q13.disabled = true;
 			q14.disabled = true;
-			q16.disabled = true;
+			// q16.disabled = true;
 			q17.disabled = true;
 			q18.disabled = true;
 			q19.disabled = true;
@@ -503,13 +499,13 @@
 						
 			
 			//calc percent
-			space_score = Math.round(space_score / 6 * 100);
+			space_score = Math.round(space_score * 100 / 6);
 			
-			math_score = Math.round(math_score / 9 * 100);
+			math_score = Math.round(math_score * 100 / 9);
 			
-			pc_score += Number(q20.value) + Number(q21.value) + Number(q23.value);
+			pc_score += Number(q20.value); //+ Number(q21.value) + Number(q23.value);
 			
-			pc_score = Math.round(pc_score / 20 * 100);
+			pc_score = Math.round(pc_score * 100 / 10);
 			
 			
 			//Show result
