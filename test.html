@@ -322,27 +322,27 @@
 			</div>
 			<br>
 			
-			<div class = "questionBlock" id="qB_21">
+			<!-- <div class = "questionBlock" id="qB_21">
 			<font size="+1"> <b> Практика 2. Из получившейся папки в практике 1 создай архив с любым именем и помести архив на рабочий стол рядом с папкой. </b> </font>
 
 				<p>Оценка: <input type="text" id=q21 class="input_field"> (Ставит преподаватель, 0 - 5 баллов)
 			</div>
-			<br>
+			<br> -->
 			
 			<div class = "questionBlock" id="qB_22">
-			<font size="+1"> <b> Практика 3. С помощью браузера и интернета найти в каком году выпустили игру тетрис. Ответ запиши ниже. </b> </font>
+			<font size="+1"> <b> Практика 2. С помощью браузера и интернета найти в каком году выпустили игру тетрис. Ответ запиши ниже. </b> </font>
 
 				<p>Ответ: <input type="text" id=q22 class="input_field"> 
 			</div>
 			<br>
 			
-			<div class = "questionBlock" id="qB_23">
+			<!-- <div class = "questionBlock" id="qB_23">
 			<font size="+1"> <b> Практика 4. Постарайся нарисовать максимально похожий рисунок в программе Paint. Затем сохрани изображение в папке “Я хочу учиться в Юниум”, которую ты сделал на практике 1. Файл должен называться “Among Us Character”.</b> </font>
 
 			<img src="img/23.jpg" class="center">
 				<p>Оценка: <input type="text" id=q23 class="input_field"> (Ставит преподаватель, 0 - 5 баллов)
 			</div>
-			<br>
+			<br> -->
 			
 				
 		</div>
@@ -401,13 +401,13 @@
 			var q19 = document.getElementById("q19");
 			
 			var q20 = document.getElementById("q20");
-			var q21 = document.getElementById("q21");
+			// var q21 = document.getElementById("q21");
 			var q22 = document.getElementById("q22");
-			var q23 = document.getElementById("q23");
+			// var q23 = document.getElementById("q23");
 	
 
 			// Check input
-			if(q1 == null  || q2 == null   || q3 == null  || q4 == null  || q5 == null || q6.value == "" || q7 == null || q8 == null || q9.value == "" || q10_1.value == "" || q10_2.value == "" ||  q11.value == "" ||  q12.value == "" ||  q13.value == "" ||  q14.value == "" ||  q15.value == "" || q16 == null  || q17.value == "" || q18.value == "" || q19.value == "" || q22.value == "") {alert("Ты ответил не на все вопросы!"); return false;};
+			// if(q1 == null  || q2 == null   || q3 == null  || q4 == null  || q5 == null || q6.value == "" || q7 == null || q8 == null || q9.value == "" || q10_1.value == "" || q10_2.value == "" ||  q11.value == "" ||  q12.value == "" ||  q13.value == "" ||  q14.value == "" ||  q15.value == "" || q16 == null  || q17.value == "" || q18.value == "" || q19.value == "" || q22.value == "") {alert("Ты ответил не на все вопросы!"); return false;};
 	
 			
 			// Calc result 
@@ -465,12 +465,12 @@
 			if(q22.value == 1984) document.getElementById('qB_22').classList.add('button_correct'); else document.getElementById('qB_22').classList.add('button_wrong');
 			
 			if(q20.value > 0) document.getElementById('qB_20').classList.add('button_correct'); else document.getElementById('qB_20').classList.remove('button_correct');
-			if(q21.value > 0) document.getElementById('qB_21').classList.add('button_correct'); else document.getElementById('qB_21').classList.remove('button_correct');
-			if(q23.value > 0) document.getElementById('qB_23').classList.add('button_correct'); else document.getElementById('qB_23').classList.remove('button_correct');
+			// if(q21.value > 0) document.getElementById('qB_21').classList.add('button_correct'); else document.getElementById('qB_21').classList.remove('button_correct');
+			// if(q23.value > 0) document.getElementById('qB_23').classList.add('button_correct'); else document.getElementById('qB_23').classList.remove('button_correct');
 			
 			if(q20.value == 0) document.getElementById('qB_20').classList.add('button_wrong'); 
-			if(q21.value == 0) document.getElementById('qB_21').classList.add('button_wrong'); 
-			if(q23.value == 0) document.getElementById('qB_23').classList.add('button_wrong'); 
+			// if(q21.value == 0) document.getElementById('qB_21').classList.add('button_wrong'); 
+			// if(q23.value == 0) document.getElementById('qB_23').classList.add('button_wrong'); 
 			
 			//disabled answer
 			var radios;
